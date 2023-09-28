@@ -1,3 +1,4 @@
+import 'package:bigdigital/user_entity.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -56,6 +57,32 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+
+
+  getUser(){
+    UserEntity _user = UserEntity(email: "test@gmail.com");
+
+    if (_user.email == ""){
+      print("email is empty");
+    } else {
+      print("email is not empty");
+
+    }
+  }
+
+/*
+void getUser() {
+  UserEntity _user = UserEntity(email: "test@gmail.com");
+
+  String email = _user.email; // Estrae l'email per rendere il codice più leggibile.
+
+  String message = email.isEmpty ? "email is empty" : "email is not empty";
+
+  print(message);
+}
+ */
+
+
 
   void _incrementCounter() {
     setState(() {
