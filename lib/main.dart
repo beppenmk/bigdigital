@@ -70,17 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-/*
-void getUser() {
-  UserEntity _user = UserEntity(email: "test@gmail.com");
-
-  String email = _user.email; // Estrae l'email per rendere il codice più leggibile.
-
-  String message = email.isEmpty ? "email is empty" : "email is not empty";
-
-  print(message);
-}
- */
+ 
 
 
 
